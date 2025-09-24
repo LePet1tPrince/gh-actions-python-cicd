@@ -29,6 +29,7 @@ jobs:
     
     build-and-push:
         name: Build and Push Container
+        needs: lint-and-test
         runs-on: ubuntu-latest
         permissions:
             packages: write
