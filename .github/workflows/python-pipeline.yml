@@ -21,7 +21,7 @@ jobs:
             - name: Lint Hello.py
               run: |
                 flake8 hello.py
-                pylint hello.oy
+                pylint hello.py
 
             - name: Test Script
               run: python hello.py | grep -i hello || exit 1
